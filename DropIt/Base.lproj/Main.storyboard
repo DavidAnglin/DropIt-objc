@@ -17,21 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quF-cK-KZO">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quF-cK-KZO" customClass="BezierPathView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="AIL-Wf-noC" appends="YES" id="iFY-oL-TRM"/>
+                                    <outletCollection property="gestureRecognizers" destination="5o8-4B-yRk" appends="YES" id="PmU-6z-0IS"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="quF-cK-KZO" secondAttribute="trailing" id="EHZ-yy-ArU"/>
-                            <constraint firstItem="quF-cK-KZO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YQq-5x-ELB"/>
-                            <constraint firstItem="quF-cK-KZO" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="d61-07-Ba6"/>
-                            <constraint firstItem="quF-cK-KZO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mhI-K7-OKJ"/>
+                            <constraint firstAttribute="trailing" secondItem="quF-cK-KZO" secondAttribute="trailing" id="2v3-hS-SdX"/>
+                            <constraint firstItem="quF-cK-KZO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TUR-Zm-wkR"/>
+                            <constraint firstItem="quF-cK-KZO" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Tfg-Dh-569"/>
+                            <constraint firstItem="quF-cK-KZO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ueh-1f-Gzh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -44,6 +45,11 @@
                         <action selector="tap:" destination="BYZ-38-t0r" id="NqN-I0-tPE"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="5o8-4B-yRk">
+                    <connections>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="vc0-af-Zg4"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="305" y="387"/>
         </scene>
