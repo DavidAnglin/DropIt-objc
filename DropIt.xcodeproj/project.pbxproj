@@ -15,6 +15,7 @@
 		D73DF7F61C986E05008AEBF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73DF7F41C986E05008AEBF0 /* LaunchScreen.storyboard */; };
 		D73DF8011C986E05008AEBF0 /* DropItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D73DF8001C986E05008AEBF0 /* DropItTests.m */; };
 		D73DF80C1C986E05008AEBF0 /* DropItUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D73DF80B1C986E05008AEBF0 /* DropItUITests.m */; };
+		D73DF81B1C9879F0008AEBF0 /* DropItBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = D73DF81A1C9879F0008AEBF0 /* DropItBehavior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D73DF8071C986E05008AEBF0 /* DropItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73DF80B1C986E05008AEBF0 /* DropItUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropItUITests.m; sourceTree = "<group>"; };
 		D73DF80D1C986E05008AEBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D73DF8191C9879F0008AEBF0 /* DropItBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropItBehavior.h; sourceTree = "<group>"; };
+		D73DF81A1C9879F0008AEBF0 /* DropItBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropItBehavior.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +104,10 @@
 		D73DF7E51C986E05008AEBF0 /* DropIt */ = {
 			isa = PBXGroup;
 			children = (
-				D73DF7E91C986E05008AEBF0 /* DropItAppDelegate.h */,
-				D73DF7EA1C986E05008AEBF0 /* DropItAppDelegate.m */,
 				D73DF7EC1C986E05008AEBF0 /* DropItViewController.h */,
 				D73DF7ED1C986E05008AEBF0 /* DropItViewController.m */,
+				D73DF8191C9879F0008AEBF0 /* DropItBehavior.h */,
+				D73DF81A1C9879F0008AEBF0 /* DropItBehavior.m */,
 				D73DF7EF1C986E05008AEBF0 /* Main.storyboard */,
 				D73DF7E61C986E05008AEBF0 /* Supporting Files */,
 			);
@@ -116,6 +119,8 @@
 			children = (
 				D73DF7F71C986E05008AEBF0 /* Info.plist */,
 				D73DF7F21C986E05008AEBF0 /* Assets.xcassets */,
+				D73DF7E91C986E05008AEBF0 /* DropItAppDelegate.h */,
+				D73DF7EA1C986E05008AEBF0 /* DropItAppDelegate.m */,
 				D73DF7F41C986E05008AEBF0 /* LaunchScreen.storyboard */,
 				D73DF7E71C986E05008AEBF0 /* main.m */,
 			);
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73DF7EE1C986E05008AEBF0 /* DropItViewController.m in Sources */,
+				D73DF81B1C9879F0008AEBF0 /* DropItBehavior.m in Sources */,
 				D73DF7EB1C986E05008AEBF0 /* DropItAppDelegate.m in Sources */,
 				D73DF7E81C986E05008AEBF0 /* main.m in Sources */,
 			);
@@ -416,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DropIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.DropIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.DropItobjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -427,7 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DropIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.DropIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidAnglin.DropItobjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

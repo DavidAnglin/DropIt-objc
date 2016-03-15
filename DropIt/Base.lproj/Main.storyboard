@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Drop It View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DropItViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +16,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quF-cK-KZO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AIL-Wf-noC" appends="YES" id="iFY-oL-TRM"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="quF-cK-KZO" secondAttribute="trailing" id="EHZ-yy-ArU"/>
+                            <constraint firstItem="quF-cK-KZO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YQq-5x-ELB"/>
+                            <constraint firstItem="quF-cK-KZO" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="d61-07-Ba6"/>
+                            <constraint firstItem="quF-cK-KZO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mhI-K7-OKJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gameView" destination="quF-cK-KZO" id="hGL-CZ-6Jl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AIL-Wf-noC">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="NqN-I0-tPE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
 </document>
